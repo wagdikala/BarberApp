@@ -1,5 +1,5 @@
 //
-//  QeueViewController.swift
+//  BookViewController.swift
 //  BarberApp
 //
 //  Created by Wagdi Kala on 10/06/2020.
@@ -9,7 +9,7 @@
 import UIKit
 import CollectionPickerView
 
-class QeueViewController: UIViewController {
+class BookViewController: UIViewController {
 
     let titles = ["17 APR", "18 APR", "19 APR", "20 APR", "21 APR", "22 APR", "23 APR"]
     
@@ -42,11 +42,11 @@ class QeueViewController: UIViewController {
 
 }
 
-extension QeueViewController: UICollectionViewDelegate {
+extension BookViewController: UICollectionViewDelegate {
     
 }
 
-extension QeueViewController: UICollectionViewDataSource {
+extension BookViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1

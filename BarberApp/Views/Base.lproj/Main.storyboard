@@ -387,10 +387,10 @@
             </objects>
             <point key="canvasLocation" x="1721.7391304347827" y="137.94642857142856"/>
         </scene>
-        <!--Qeue View Controller-->
+        <!--Book View Controller-->
         <scene sceneID="Uhe-EP-z6h">
             <objects>
-                <viewController id="CKP-73-HAR" customClass="QeueViewController" customModule="BarberApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CKP-73-HAR" customClass="BookViewController" customModule="BarberApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vit-D1-LEa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

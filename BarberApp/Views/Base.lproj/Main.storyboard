@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lZF-Q2-UDj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NewPeninimMT.ttc">
+            <string>NewPeninimMT</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Signin View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SigninViewController" customModule="BarberApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="120" translatesAutoresizingMaskIntoConstraints="NO" id="eZH-Xf-yuv">
+                                <rect key="frame" x="72" y="106" width="270" height="596"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="DKY-TP-aT0">
+                                        <rect key="frame" x="8.5" y="0.0" width="253" height="301"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="m8e-5Q-mgl">
+                                        <rect key="frame" x="0.0" y="421" width="270" height="175"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" ש ם  מ ש ת מ ש :" textAlignment="right" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="nQI-1P-XXi">
+                                                <rect key="frame" x="0.0" y="0.0" width="270" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="8li-kF-dTs"/>
+                                                    <constraint firstAttribute="width" constant="270" id="R7G-Lo-06m"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NewPeninimMT" family="New Peninim MT" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" name="DarkGray"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder=" ס י ס מ א :" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ztW-bV-OOz">
+                                                <rect key="frame" x="0.0" y="50" width="270" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="270" id="a2W-lS-yJk"/>
+                                                    <constraint firstAttribute="height" constant="30" id="sF2-jC-pZZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NewPeninimMT" family="New Peninim MT" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" name="DarkGray"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ldd-L2-awM">
+                                                <rect key="frame" x="0.0" y="100" width="270" height="75"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ah9-2S-eH5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="270" height="40"/>
+                                                        <color key="backgroundColor" name="DarkGray"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="B0E-Pb-wlY"/>
+                                                            <constraint firstAttribute="width" constant="270" id="RPO-UP-Zth"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="qjT-sW-h8e"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="tTt-f5-Fzw"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="NewPeninimMT" family="New Peninim MT" pointSize="17"/>
+                                                        <state key="normal" title="כ נ י ס ה">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="thX-Ev-Pak" kind="show" id="nxB-Xg-YDC"/>
+                                                        </connections>
+                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BQU-yd-1Ov">
+                                                        <rect key="frame" x="0.0" y="45" width="270" height="30"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAH-Ir-HC6">
+                                                                <rect key="frame" x="0.0" y="0.0" width="135" height="30"/>
+                                                                <fontDescription key="fontDescription" name="NewPeninimMT" family="New Peninim MT" pointSize="15"/>
+                                                                <state key="normal" title="  ה ר ש ם"/>
+                                                                <connections>
+                                                                    <segue destination="B4r-9U-CHg" kind="show" id="ItZ-xK-wYk"/>
+                                                                </connections>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ח ד ש   פ ה ? , " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91s-5N-ZSG">
+                                                                <rect key="frame" x="135" y="6.5" width="135" height="17.5"/>
+                                                                <fontDescription key="fontDescription" name="NewPeninimMT" family="New Peninim MT" pointSize="15"/>
+                                                                <color key="textColor" name="DarkGray"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eZH-Xf-yuv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lb7-h4-ipM"/>
+                            <constraint firstItem="eZH-Xf-yuv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="smw-Ei-3Zz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TnE-qv-3Nj"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="nQI-1P-XXi" id="5Ay-7x-vbo"/>
+                        <outlet property="userNameTextField" destination="ztW-bV-OOz" id="OyY-fx-xX7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952" y="138"/>
+        </scene>
+        <!--Signup View Controller-->
+        <scene sceneID="ix7-Fb-RZi">
+            <objects>
+                <viewController id="B4r-9U-CHg" customClass="SignupViewController" customModule="BarberApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QjX-uN-cL4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="jB5-b1-sTQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="703.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SignupImage" translatesAutoresizingMaskIntoConstraints="NO" id="SE2-XZ-08f">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="193"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="10H-ae-TV8">
+                                        <rect key="frame" x="72" y="283" width="270" height="420.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="wK9-Lx-ayp">
+                                                <rect key="frame" x="0.0" y="0.0" width="270" height="45.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ש ם   ו מ ש פ ח ה" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auS-0v-fbc">
+                                                        <rect key="frame" x="177.5" y="0.0" width="92.5" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="NewPeninimMT" family="New Peninim MT" pointSize="13"/>
+                                                        <color key="textColor" name="DarkGray"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BCq-Tx-GLq">
+                                                        <rect key="frame" x="0.0" y="15.5" width="270" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="I5Z-BF-PKg"/>
+                                                            <constraint firstAttribute="width" constant="270" id="wzW-p8-VFA"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="DarkGray"/>
+                                                        <fontDescription key="fontDescription" name="NewPeninimMT" family="New Peninim MT" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="2ve-BB-xDO">
+                                                <rect key="frame" x="0.0" y="65.5" width="270" height="45.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ט ל פ ו ן" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ccx-cN-Api">
+                                                        <rect key="frame" x="228" y="0.0" width="42" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="NewPeninimMT" family="New Peninim MT" pointSize="13"/>
+                                                        <color key="textColor" name="DarkGray"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uNQ-3M-WiC">
+                                                        <rect key="frame" x="0.0" y="15.5" width="270" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="270" id="LZU-JV-12D"/>
+                                                            <constraint firstAttribute="height" constant="30" id="fz7-Q6-sC0"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="DarkGray"/>
+                                                        <fontDescription key="fontDescription" name="NewPeninimMT" family="New Peninim MT" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="5da-vl-7JU">
+                                                <rect key="frame" x="0.0" y="131" width="270" height="45.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ד ו א ״ ל" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyr-zm-VTI">
+                                                        <rect key="frame" x="226.5" y="0.0" width="43.5" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="NewPeninimMT" family="New Peninim MT" pointSize="13"/>
+                                                        <color key="textColor" name="DarkGray"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b3I-sA-ono">
+                                                        <rect key="frame" x="0.0" y="15.5" width="270" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="91H-e0-fmL"/>
+                                                            <constraint firstAttribute="width" constant="270" id="IF2-Ei-Z4D"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="DarkGray"/>
+                                                        <fontDescription key="fontDescription" name="NewPeninimMT" family="New Peninim MT" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Jpf-3h-h9l">
+                                                <rect key="frame" x="0.0" y="196.5" width="270" height="45.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ס י ס מ א" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oZ-3h-bM3">
+                                                        <rect key="frame" x="222" y="0.0" width="48" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="NewPeninimMT" family="New Peninim MT" pointSize="13"/>
+                                                        <color key="textColor" name="DarkGray"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3tG-Jw-pWe">
+                                                        <rect key="frame" x="0.0" y="15.5" width="270" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="8Ru-ng-InH"/>
+                                                            <constraint firstAttribute="width" constant="270" id="t4Y-LR-kSM"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="DarkGray"/>
+                                                        <fontDescription key="fontDescription" name="NewPeninimMT" family="New Peninim MT" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="xaE-rY-FnL">
+                                                <rect key="frame" x="0.0" y="262" width="270" height="45.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ה ק ל ד   ס י ס מ א   ש ו ב" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhV-rT-Vfr">
+                                                        <rect key="frame" x="135.5" y="0.0" width="134.5" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="NewPeninimMT" family="New Peninim MT" pointSize="13"/>
+                                                        <color key="textColor" name="DarkGray"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ydA-gn-RKW">
+                                                        <rect key="frame" x="0.0" y="15.5" width="270" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="270" id="2IR-qk-7IJ"/>
+                                                            <constraint firstAttribute="height" constant="30" id="ui1-LJ-W3K"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="DarkGray"/>
+                                                        <fontDescription key="fontDescription" name="NewPeninimMT" family="New Peninim MT" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3dots" translatesAutoresizingMaskIntoConstraints="NO" id="H37-V8-M4b">
+                                                <rect key="frame" x="122" y="327.5" width="26" height="6"/>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="di5-ja-OVf">
+                                                <rect key="frame" x="0.0" y="353.5" width="270" height="67"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zK1-15-uZR">
+                                                        <rect key="frame" x="0.0" y="0.0" width="270" height="40"/>
+                                                        <color key="backgroundColor" name="DarkGray"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="Iqn-oa-7UL"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="LDL-Oz-kTE"/>
+                                                            <constraint firstAttribute="height" constant="40" id="TnZ-Tg-8lY"/>
+                                                            <constraint firstAttribute="width" constant="270" id="mgW-sx-iaV"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="NewPeninimMT" family="New Peninim MT" pointSize="17"/>
+                                                        <state key="normal" title="ש ל ח">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="sendPressed:" destination="B4r-9U-CHg" eventType="touchUpInside" id="C7h-9s-cQ2"/>
+                                                        </connections>
+                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="lcE-yr-NgM">
+                                                        <rect key="frame" x="0.0" y="45" width="270" height="22"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ק ר א ת י   ו א נ י   מ א ש ר   א ת   ת נ א י   ה ש י מ ו ש" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSJ-XT-lTj">
+                                                                <rect key="frame" x="0.0" y="0.0" width="245" height="22"/>
+                                                                <fontDescription key="fontDescription" name="NewPeninimMT" family="New Peninim MT" pointSize="13"/>
+                                                                <color key="textColor" name="DarkGray"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLS-u6-8F9">
+                                                                <rect key="frame" x="250" y="0.0" width="20" height="22"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="22" id="fWv-A6-GdA"/>
+                                                                    <constraint firstAttribute="width" constant="20" id="gcx-XE-2RH"/>
+                                                                </constraints>
+                                                                <color key="tintColor" name="DarkGray"/>
+                                                                <state key="normal" image="rectangle" catalog="system"/>
+                                                                <state key="selected" image="checkmark.rectangle" catalog="system"/>
+                                                                <connections>
+                                                                    <action selector="checkBoxPressed:" destination="B4r-9U-CHg" eventType="touchUpInside" id="lKh-iG-zaE"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jB5-b1-sTQ" firstAttribute="top" secondItem="uRs-J5-wTt" secondAttribute="top" id="BbQ-ci-T7X"/>
+                            <constraint firstItem="jB5-b1-sTQ" firstAttribute="trailing" secondItem="uRs-J5-wTt" secondAttribute="trailing" id="TDn-js-kdl"/>
+                            <constraint firstItem="jB5-b1-sTQ" firstAttribute="leading" secondItem="uRs-J5-wTt" secondAttribute="leading" id="bHx-NL-l3z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uRs-J5-wTt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qmS-EH-K9k"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="umT-hW-UHO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1722" y="-563"/>
+        </scene>
+        <!--Main Page View Controller-->
+        <scene sceneID="Iad-dL-Iuf">
+            <objects>
+                <viewController id="thX-Ev-Pak" customClass="MainPageViewController" customModule="BarberApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iSz-Tg-kY5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="adp-g9-S5w">
+                                <rect key="frame" x="32" y="0.0" width="350" height="758"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainPageImage" translatesAutoresizingMaskIntoConstraints="NO" id="Wy9-wK-IFX">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="350"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="7vr-qt-1Yz"/>
+                                            <constraint firstAttribute="height" constant="350" id="Fgz-u3-fAa"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0J-mM-p53">
+                                        <rect key="frame" x="118.5" y="370" width="113" height="124"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="113" id="J6j-RP-3Yt"/>
+                                            <constraint firstAttribute="height" constant="124" id="yUn-29-xHT"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="qeue"/>
+                                        <connections>
+                                            <segue destination="CKP-73-HAR" kind="show" id="yRc-cg-75C"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZv-Yr-QE0">
+                                        <rect key="frame" x="140" y="514" width="70" height="68"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="0iz-xY-LlL"/>
+                                            <constraint firstAttribute="height" constant="68" id="6wt-vz-2gj"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="BABER"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Anc-cM-j9m">
+                                        <rect key="frame" x="140" y="602" width="70" height="68"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="N1e-Be-RjV"/>
+                                            <constraint firstAttribute="height" constant="68" id="RQA-Xk-MgW"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="contact"/>
+                                        <connections>
+                                            <segue destination="uH2-hp-pzZ" kind="showDetail" id="4mL-bG-UpG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rb8-QZ-ine">
+                                        <rect key="frame" x="140" y="690" width="70" height="68"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="68" id="R4M-Ol-Pt8"/>
+                                            <constraint firstAttribute="width" constant="70" id="gNU-Qs-Wqg"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="Back"/>
+                                        <connections>
+                                            <action selector="backPressed:" destination="thX-Ev-Pak" eventType="touchUpInside" id="HrK-t1-Rwp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="87T-SK-SYy" firstAttribute="trailing" secondItem="adp-g9-S5w" secondAttribute="trailing" constant="32" id="HWB-ih-qEZ"/>
+                            <constraint firstItem="adp-g9-S5w" firstAttribute="leading" secondItem="87T-SK-SYy" secondAttribute="leading" constant="32" id="XPX-Ca-xdb"/>
+                            <constraint firstItem="adp-g9-S5w" firstAttribute="top" secondItem="87T-SK-SYy" secondAttribute="top" id="fw4-Dd-YTZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="87T-SK-SYy"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zWe-7F-ld6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uE0-MY-s1b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1721.7391304347827" y="137.94642857142856"/>
+        </scene>
+        <!--Qeue View Controller-->
+        <scene sceneID="Uhe-EP-z6h">
+            <objects>
+                <viewController id="CKP-73-HAR" customClass="QeueViewController" customModule="BarberApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vit-D1-LEa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="v7Q-ob-b5Z"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aYw-65-Jcq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aFh-Um-owp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2548" y="138"/>
+        </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="3pe-2c-M6f">
+            <objects>
+                <viewController id="uH2-hp-pzZ" customClass="ContactViewController" customModule="BarberApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Shm-h5-myf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="uHo-Fs-XPt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="F5v-41-75q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nO1-U6-R55" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1722" y="847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="igJ-d8-1b3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lZF-Q2-UDj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="xfh-te-0fF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ysx-hC-JoG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bvN-Yo-bpU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="3dots" width="26" height="6"/>
+        <image name="BABER" width="69" height="68"/>
+        <image name="Back" width="69" height="68"/>
+        <image name="MainPageImage" width="357" height="357"/>
+        <image name="SignupImage" width="414" height="193"/>
+        <image name="checkmark.rectangle" catalog="system" width="128" height="93"/>
+        <image name="contact" width="69" height="68"/>
+        <image name="logo" width="253" height="301"/>
+        <image name="qeue" width="113" height="112"/>
+        <image name="rectangle" catalog="system" width="128" height="93"/>
+        <namedColor name="DarkGray">
+            <color red="0.30199998617172241" green="0.3059999942779541" blue="0.3059999942779541" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43470F912490373800211579 /* QeueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43470F902490373800211579 /* QeueViewController.swift */; };
+		43EB2D72248EABA00088B6EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EB2D71248EABA00088B6EF /* AppDelegate.swift */; };
+		43EB2D74248EABA00088B6EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EB2D73248EABA00088B6EF /* SceneDelegate.swift */; };
+		43EB2D76248EABA00088B6EF /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EB2D75248EABA00088B6EF /* SigninViewController.swift */; };
+		43EB2D79248EABA00088B6EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43EB2D77248EABA00088B6EF /* Main.storyboard */; };
+		43EB2D7C248EABA00088B6EF /* BarberApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43EB2D7A248EABA00088B6EF /* BarberApp.xcdatamodeld */; };
+		43EB2D7E248EABA10088B6EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43EB2D7D248EABA10088B6EF /* Assets.xcassets */; };
+		43EB2D81248EABA20088B6EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43EB2D7F248EABA20088B6EF /* LaunchScreen.storyboard */; };
+		43EB2D90248EB0BF0088B6EF /* logo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 43EB2D8F248EB0BF0088B6EF /* logo.pdf */; };
+		43EB2D93248EB7D10088B6EF /* NewPeninimMT.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 43EB2D92248EB48F0088B6EF /* NewPeninimMT.ttc */; };
+		43EB2D95248EC07B0088B6EF /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EB2D94248EC07B0088B6EF /* SignupViewController.swift */; };
+		43EB2D97248EEC700088B6EF /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EB2D96248EEC700088B6EF /* MainPageViewController.swift */; };
+		43EB2D99248EF0B10088B6EF /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EB2D98248EF0B10088B6EF /* ContactViewController.swift */; };
+		AABE7BCB97821F16C618935A /* Pods_BarberApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB67EFACC890B91C31B92F5 /* Pods_BarberApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3BB87EBDF64BE5BA94784459 /* Pods-BarberApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarberApp.debug.xcconfig"; path = "Target Support Files/Pods-BarberApp/Pods-BarberApp.debug.xcconfig"; sourceTree = "<group>"; };
+		43470F902490373800211579 /* QeueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QeueViewController.swift; sourceTree = "<group>"; };
+		43EB2D6E248EABA00088B6EF /* BarberApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarberApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43EB2D71248EABA00088B6EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43EB2D73248EABA00088B6EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		43EB2D75248EABA00088B6EF /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		43EB2D78248EABA00088B6EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43EB2D7B248EABA00088B6EF /* BarberApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BarberApp.xcdatamodel; sourceTree = "<group>"; };
+		43EB2D7D248EABA10088B6EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43EB2D80248EABA20088B6EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43EB2D82248EABA20088B6EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43EB2D8F248EB0BF0088B6EF /* logo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = logo.pdf; sourceTree = "<group>"; };
+		43EB2D92248EB48F0088B6EF /* NewPeninimMT.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = NewPeninimMT.ttc; sourceTree = "<group>"; };
+		43EB2D94248EC07B0088B6EF /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		43EB2D96248EEC700088B6EF /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		43EB2D98248EF0B10088B6EF /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		AEB67EFACC890B91C31B92F5 /* Pods_BarberApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarberApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B870704E1DEEF2B67A979212 /* Pods-BarberApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarberApp.release.xcconfig"; path = "Target Support Files/Pods-BarberApp/Pods-BarberApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43EB2D6B248EABA00088B6EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AABE7BCB97821F16C618935A /* Pods_BarberApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37FCD18D1657736CC3256DDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEB67EFACC890B91C31B92F5 /* Pods_BarberApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43EB2D65248EABA00088B6EF = {
+			isa = PBXGroup;
+			children = (
+				43EB2D70248EABA00088B6EF /* BarberApp */,
+				43EB2D6F248EABA00088B6EF /* Products */,
+				B01D9C4C42BE2DAF8A9A756E /* Pods */,
+				37FCD18D1657736CC3256DDB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		43EB2D6F248EABA00088B6EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43EB2D6E248EABA00088B6EF /* BarberApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43EB2D70248EABA00088B6EF /* BarberApp */ = {
+			isa = PBXGroup;
+			children = (
+				43EB2D8A248EAC530088B6EF /* Models */,
+				43EB2D71248EABA00088B6EF /* AppDelegate.swift */,
+				43EB2D73248EABA00088B6EF /* SceneDelegate.swift */,
+				43EB2D89248EAC450088B6EF /* Views */,
+				43EB2D88248EAC380088B6EF /* ViewControllers */,
+				43EB2D7D248EABA10088B6EF /* Assets.xcassets */,
+				43EB2D7F248EABA20088B6EF /* LaunchScreen.storyboard */,
+				43EB2D82248EABA20088B6EF /* Info.plist */,
+				43EB2D7A248EABA00088B6EF /* BarberApp.xcdatamodeld */,
+				43EB2D8F248EB0BF0088B6EF /* logo.pdf */,
+				43EB2D91248EB4670088B6EF /* Fonts */,
+			);
+			path = BarberApp;
+			sourceTree = "<group>";
+		};
+		43EB2D88248EAC380088B6EF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				43EB2D75248EABA00088B6EF /* SigninViewController.swift */,
+				43EB2D94248EC07B0088B6EF /* SignupViewController.swift */,
+				43EB2D96248EEC700088B6EF /* MainPageViewController.swift */,
+				43EB2D98248EF0B10088B6EF /* ContactViewController.swift */,
+				43470F902490373800211579 /* QeueViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		43EB2D89248EAC450088B6EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				43EB2D77248EABA00088B6EF /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		43EB2D8A248EAC530088B6EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		43EB2D91248EB4670088B6EF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				43EB2D92248EB48F0088B6EF /* NewPeninimMT.ttc */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B01D9C4C42BE2DAF8A9A756E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BB87EBDF64BE5BA94784459 /* Pods-BarberApp.debug.xcconfig */,
+				B870704E1DEEF2B67A979212 /* Pods-BarberApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43EB2D6D248EABA00088B6EF /* BarberApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43EB2D85248EABA20088B6EF /* Build configuration list for PBXNativeTarget "BarberApp" */;
+			buildPhases = (
+				6C65113BE336BBAFDD6F2012 /* [CP] Check Pods Manifest.lock */,
+				43EB2D6A248EABA00088B6EF /* Sources */,
+				43EB2D6B248EABA00088B6EF /* Frameworks */,
+				43EB2D6C248EABA00088B6EF /* Resources */,
+				170451C6C70CB73AB96021E7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BarberApp;
+			productName = BarberApp;
+			productReference = 43EB2D6E248EABA00088B6EF /* BarberApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43EB2D66248EABA00088B6EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Wagdi Kala";
+				TargetAttributes = {
+					43EB2D6D248EABA00088B6EF = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 43EB2D69248EABA00088B6EF /* Build configuration list for PBXProject "BarberApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43EB2D65248EABA00088B6EF;
+			productRefGroup = 43EB2D6F248EABA00088B6EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43EB2D6D248EABA00088B6EF /* BarberApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43EB2D6C248EABA00088B6EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43EB2D81248EABA20088B6EF /* LaunchScreen.storyboard in Resources */,
+				43EB2D90248EB0BF0088B6EF /* logo.pdf in Resources */,
+				43EB2D7E248EABA10088B6EF /* Assets.xcassets in Resources */,
+				43EB2D93248EB7D10088B6EF /* NewPeninimMT.ttc in Resources */,
+				43EB2D79248EABA00088B6EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		170451C6C70CB73AB96021E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BarberApp/Pods-BarberApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BarberApp/Pods-BarberApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BarberApp/Pods-BarberApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C65113BE336BBAFDD6F2012 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BarberApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43EB2D6A248EABA00088B6EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43EB2D76248EABA00088B6EF /* SigninViewController.swift in Sources */,
+				43EB2D99248EF0B10088B6EF /* ContactViewController.swift in Sources */,
+				43470F912490373800211579 /* QeueViewController.swift in Sources */,
+				43EB2D7C248EABA00088B6EF /* BarberApp.xcdatamodeld in Sources */,
+				43EB2D95248EC07B0088B6EF /* SignupViewController.swift in Sources */,
+				43EB2D72248EABA00088B6EF /* AppDelegate.swift in Sources */,
+				43EB2D97248EEC700088B6EF /* MainPageViewController.swift in Sources */,
+				43EB2D74248EABA00088B6EF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		43EB2D77248EABA00088B6EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43EB2D78248EABA00088B6EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		43EB2D7F248EABA20088B6EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43EB2D80248EABA20088B6EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43EB2D83248EABA20088B6EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43EB2D84248EABA20088B6EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43EB2D86248EABA20088B6EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BB87EBDF64BE5BA94784459 /* Pods-BarberApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6KTP8RB8CJ;
+				INFOPLIST_FILE = BarberApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wagdikala.BarberApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		43EB2D87248EABA20088B6EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B870704E1DEEF2B67A979212 /* Pods-BarberApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6KTP8RB8CJ;
+				INFOPLIST_FILE = BarberApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wagdikala.BarberApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43EB2D69248EABA00088B6EF /* Build configuration list for PBXProject "BarberApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43EB2D83248EABA20088B6EF /* Debug */,
+				43EB2D84248EABA20088B6EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43EB2D85248EABA20088B6EF /* Build configuration list for PBXNativeTarget "BarberApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43EB2D86248EABA20088B6EF /* Debug */,
+				43EB2D87248EABA20088B6EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		43EB2D7A248EABA00088B6EF /* BarberApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				43EB2D7B248EABA00088B6EF /* BarberApp.xcdatamodel */,
+			);
+			currentVersion = 43EB2D7B248EABA00088B6EF /* BarberApp.xcdatamodel */;
+			path = BarberApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 43EB2D66248EABA00088B6EF /* Project object */;
+}

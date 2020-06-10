@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01285D4D3DD159C5B0636D25836ABD75 /* Pods-BarberApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D1162F1A6CE513F7FC0EE7CD2EAF9C9 /* Pods-BarberApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A5E24F12630A307A3746CFE09F337E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		82C91FB716752DDCB3EF750D43522357 /* CollectionPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4C3525D383930F24C8368D2C4E2EBB /* CollectionPickerView.swift */; };
+		8BE9155289749BCAA3B19569B9D534D1 /* Pods-BarberApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BEE7680333C40D8DA2F45E6221CD2A /* Pods-BarberApp-dummy.m */; };
+		C18E634ED674C1DA75316A9CEABA83ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C77FD0FB3BD04B1C77D698842EA93415 /* CollectionPickerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 44B6E06E0128B64E3239DD09BDEFA995 /* CollectionPickerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5FB905B8DBD950EBC51ACD015847CF5 /* CollectionPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BBF4AD84A5DFA4AB6CE3BC8233B146 /* CollectionPickerView-dummy.m */; };
+		FCA58693F9119F888C2BC5C7EB0A6E7D /* CollectionPickerViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8291A2BDD893B7CF53B2A5266CDAF8E7 /* CollectionPickerViewFlowLayout.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBE5E883C8A673923F3119376F9422E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C5B5526F8D62031CEBF02FC0F2D9515;
+			remoteInfo = CollectionPickerView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E52F288D8B014126724CA0A946ED4C1 /* Pods-BarberApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BarberApp-frameworks.sh"; sourceTree = "<group>"; };
+		13BBF4AD84A5DFA4AB6CE3BC8233B146 /* CollectionPickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CollectionPickerView-dummy.m"; sourceTree = "<group>"; };
+		22AC2C95468AB0A5F6A8A1D414240602 /* CollectionPickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CollectionPickerView-prefix.pch"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3DA83A541D30E93D9740EED5210D1AF7 /* Pods_BarberApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BarberApp.framework; path = "Pods-BarberApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43BEE7680333C40D8DA2F45E6221CD2A /* Pods-BarberApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BarberApp-dummy.m"; sourceTree = "<group>"; };
+		44B6E06E0128B64E3239DD09BDEFA995 /* CollectionPickerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CollectionPickerView-umbrella.h"; sourceTree = "<group>"; };
+		4A3818E337E9EF05B85FC3181BA6D7B9 /* CollectionPickerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CollectionPickerView.release.xcconfig; sourceTree = "<group>"; };
+		4D1162F1A6CE513F7FC0EE7CD2EAF9C9 /* Pods-BarberApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BarberApp-umbrella.h"; sourceTree = "<group>"; };
+		55E9A1C535D844C36A35AAFEAD0533FF /* Pods-BarberApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BarberApp.debug.xcconfig"; sourceTree = "<group>"; };
+		653E73BB2F6E1F6AC2BD51B3F3E43913 /* Pods-BarberApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BarberApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		6B130171762C59D584854C86E89C185A /* Pods-BarberApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BarberApp-Info.plist"; sourceTree = "<group>"; };
+		80F4F992A5A33F7058F180C9AAE9AE4D /* Pods-BarberApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BarberApp.modulemap"; sourceTree = "<group>"; };
+		8291A2BDD893B7CF53B2A5266CDAF8E7 /* CollectionPickerViewFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionPickerViewFlowLayout.swift; path = CollectionPickerView/Classes/CollectionPickerViewFlowLayout.swift; sourceTree = "<group>"; };
+		9D5955AE0040C62FB020EDE408918416 /* CollectionPickerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CollectionPickerView.modulemap; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A995C3BDEABA8ABB1F239D7C06D1913A /* CollectionPickerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CollectionPickerView.debug.xcconfig; sourceTree = "<group>"; };
+		BD4C3525D383930F24C8368D2C4E2EBB /* CollectionPickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionPickerView.swift; path = CollectionPickerView/Classes/CollectionPickerView.swift; sourceTree = "<group>"; };
+		BF8AB8A1C83E5B798E8D74D7E49AD3B9 /* CollectionPickerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CollectionPickerView.framework; path = CollectionPickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4A6D909B208917645F5BDF77FCDDEEA /* CollectionPickerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CollectionPickerView-Info.plist"; sourceTree = "<group>"; };
+		D3DB2E2533E82C4E20B74E167692895A /* Pods-BarberApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BarberApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FF6C805904C968075691855CE76F356F /* Pods-BarberApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BarberApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6252C4178EDB32679B4DBF335F7058E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A5E24F12630A307A3746CFE09F337E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AED3943A320F64AEDABCCC4AE10CB5DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C18E634ED674C1DA75316A9CEABA83ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28DD7FE2D9F8F9FABE5DBC478FD46A83 /* Pods-BarberApp */ = {
+			isa = PBXGroup;
+			children = (
+				80F4F992A5A33F7058F180C9AAE9AE4D /* Pods-BarberApp.modulemap */,
+				D3DB2E2533E82C4E20B74E167692895A /* Pods-BarberApp-acknowledgements.markdown */,
+				653E73BB2F6E1F6AC2BD51B3F3E43913 /* Pods-BarberApp-acknowledgements.plist */,
+				43BEE7680333C40D8DA2F45E6221CD2A /* Pods-BarberApp-dummy.m */,
+				0E52F288D8B014126724CA0A946ED4C1 /* Pods-BarberApp-frameworks.sh */,
+				6B130171762C59D584854C86E89C185A /* Pods-BarberApp-Info.plist */,
+				4D1162F1A6CE513F7FC0EE7CD2EAF9C9 /* Pods-BarberApp-umbrella.h */,
+				55E9A1C535D844C36A35AAFEAD0533FF /* Pods-BarberApp.debug.xcconfig */,
+				FF6C805904C968075691855CE76F356F /* Pods-BarberApp.release.xcconfig */,
+			);
+			name = "Pods-BarberApp";
+			path = "Target Support Files/Pods-BarberApp";
+			sourceTree = "<group>";
+		};
+		7FB5B22616F68C13BE2B92C6197D0C6A /* CollectionPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				BD4C3525D383930F24C8368D2C4E2EBB /* CollectionPickerView.swift */,
+				8291A2BDD893B7CF53B2A5266CDAF8E7 /* CollectionPickerViewFlowLayout.swift */,
+				E8CC80B5D36891183EFB6C9D60DB9ECF /* Support Files */,
+			);
+			name = CollectionPickerView;
+			path = CollectionPickerView;
+			sourceTree = "<group>";
+		};
+		BA7DE4F40B8B7212E3BB2B8A69824262 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7FB5B22616F68C13BE2B92C6197D0C6A /* CollectionPickerView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				BA7DE4F40B8B7212E3BB2B8A69824262 /* Pods */,
+				F6BD0A8B52D1121AAD5F5A040F2D33B5 /* Products */,
+				D2891FE903B3A812B22024CD42FA7DCA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2891FE903B3A812B22024CD42FA7DCA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				28DD7FE2D9F8F9FABE5DBC478FD46A83 /* Pods-BarberApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E8CC80B5D36891183EFB6C9D60DB9ECF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D5955AE0040C62FB020EDE408918416 /* CollectionPickerView.modulemap */,
+				13BBF4AD84A5DFA4AB6CE3BC8233B146 /* CollectionPickerView-dummy.m */,
+				C4A6D909B208917645F5BDF77FCDDEEA /* CollectionPickerView-Info.plist */,
+				22AC2C95468AB0A5F6A8A1D414240602 /* CollectionPickerView-prefix.pch */,
+				44B6E06E0128B64E3239DD09BDEFA995 /* CollectionPickerView-umbrella.h */,
+				A995C3BDEABA8ABB1F239D7C06D1913A /* CollectionPickerView.debug.xcconfig */,
+				4A3818E337E9EF05B85FC3181BA6D7B9 /* CollectionPickerView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CollectionPickerView";
+			sourceTree = "<group>";
+		};
+		F6BD0A8B52D1121AAD5F5A040F2D33B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF8AB8A1C83E5B798E8D74D7E49AD3B9 /* CollectionPickerView.framework */,
+				3DA83A541D30E93D9740EED5210D1AF7 /* Pods_BarberApp.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		07136449CF8E5B9970903F43C5C5E43F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C77FD0FB3BD04B1C77D698842EA93415 /* CollectionPickerView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D3BE60D83F366DF23486E55256EA4AD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01285D4D3DD159C5B0636D25836ABD75 /* Pods-BarberApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1EB3F836D1B7C0D43F6A6C93F0E53193 /* Pods-BarberApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33D9E2AEBA8200C36F32A535CC9F07DA /* Build configuration list for PBXNativeTarget "Pods-BarberApp" */;
+			buildPhases = (
+				0D3BE60D83F366DF23486E55256EA4AD /* Headers */,
+				E05C883F24A95AFA80F6B5296DF1049A /* Sources */,
+				AED3943A320F64AEDABCCC4AE10CB5DC /* Frameworks */,
+				4FDEFC32E6DE1B6B76DE8ABD39B6B830 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F08FC49A9F0A0E5BAA9C199401062B2F /* PBXTargetDependency */,
+			);
+			name = "Pods-BarberApp";
+			productName = "Pods-BarberApp";
+			productReference = 3DA83A541D30E93D9740EED5210D1AF7 /* Pods_BarberApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8C5B5526F8D62031CEBF02FC0F2D9515 /* CollectionPickerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46E476370A1E2E7832F1D27EE2D7DDFD /* Build configuration list for PBXNativeTarget "CollectionPickerView" */;
+			buildPhases = (
+				07136449CF8E5B9970903F43C5C5E43F /* Headers */,
+				AB85AA56872B3248A61130C96E48D78B /* Sources */,
+				6252C4178EDB32679B4DBF335F7058E2 /* Frameworks */,
+				BEB8CA317481D97145064C54220FE60B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CollectionPickerView;
+			productName = CollectionPickerView;
+			productReference = BF8AB8A1C83E5B798E8D74D7E49AD3B9 /* CollectionPickerView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F6BD0A8B52D1121AAD5F5A040F2D33B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C5B5526F8D62031CEBF02FC0F2D9515 /* CollectionPickerView */,
+				1EB3F836D1B7C0D43F6A6C93F0E53193 /* Pods-BarberApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FDEFC32E6DE1B6B76DE8ABD39B6B830 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEB8CA317481D97145064C54220FE60B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB85AA56872B3248A61130C96E48D78B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FB905B8DBD950EBC51ACD015847CF5 /* CollectionPickerView-dummy.m in Sources */,
+				82C91FB716752DDCB3EF750D43522357 /* CollectionPickerView.swift in Sources */,
+				FCA58693F9119F888C2BC5C7EB0A6E7D /* CollectionPickerViewFlowLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E05C883F24A95AFA80F6B5296DF1049A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE9155289749BCAA3B19569B9D534D1 /* Pods-BarberApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F08FC49A9F0A0E5BAA9C199401062B2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CollectionPickerView;
+			target = 8C5B5526F8D62031CEBF02FC0F2D9515 /* CollectionPickerView */;
+			targetProxy = EBE5E883C8A673923F3119376F9422E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		64459F9D5ED47AEAAC71E0114703C5A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF6C805904C968075691855CE76F356F /* Pods-BarberApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BarberApp/Pods-BarberApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BarberApp/Pods-BarberApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		83DF6232E82657CDD03C8AB703A0E3AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A3818E337E9EF05B85FC3181BA6D7B9 /* CollectionPickerView.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CollectionPickerView/CollectionPickerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CollectionPickerView/CollectionPickerView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CollectionPickerView/CollectionPickerView.modulemap";
+				PRODUCT_MODULE_NAME = CollectionPickerView;
+				PRODUCT_NAME = CollectionPickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A0A18AE978406545B46CCE6D981B6BD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A995C3BDEABA8ABB1F239D7C06D1913A /* CollectionPickerView.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CollectionPickerView/CollectionPickerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CollectionPickerView/CollectionPickerView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CollectionPickerView/CollectionPickerView.modulemap";
+				PRODUCT_MODULE_NAME = CollectionPickerView;
+				PRODUCT_NAME = CollectionPickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D276E8546C08F7D67039CD6916002165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55E9A1C535D844C36A35AAFEAD0533FF /* Pods-BarberApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BarberApp/Pods-BarberApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BarberApp/Pods-BarberApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DFD9D19FEEBF98DE271D7FBABCB845B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F5F04600F5626DC980F02790D1ED2C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33D9E2AEBA8200C36F32A535CC9F07DA /* Build configuration list for PBXNativeTarget "Pods-BarberApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D276E8546C08F7D67039CD6916002165 /* Debug */,
+				64459F9D5ED47AEAAC71E0114703C5A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46E476370A1E2E7832F1D27EE2D7DDFD /* Build configuration list for PBXNativeTarget "CollectionPickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0A18AE978406545B46CCE6D981B6BD7 /* Debug */,
+				83DF6232E82657CDD03C8AB703A0E3AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFD9D19FEEBF98DE271D7FBABCB845B5 /* Debug */,
+				F5F04600F5626DC980F02790D1ED2C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

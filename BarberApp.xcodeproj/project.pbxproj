@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		43470F912490373800211579 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43470F902490373800211579 /* BookViewController.swift */; };
+		439BC8602492E39D00452DE5 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439BC85F2492E39D00452DE5 /* K.swift */; };
 		43EB2D72248EABA00088B6EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EB2D71248EABA00088B6EF /* AppDelegate.swift */; };
 		43EB2D74248EABA00088B6EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EB2D73248EABA00088B6EF /* SceneDelegate.swift */; };
 		43EB2D76248EABA00088B6EF /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EB2D75248EABA00088B6EF /* SigninViewController.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		3BB87EBDF64BE5BA94784459 /* Pods-BarberApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarberApp.debug.xcconfig"; path = "Target Support Files/Pods-BarberApp/Pods-BarberApp.debug.xcconfig"; sourceTree = "<group>"; };
 		43470F902490373800211579 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		439BC85F2492E39D00452DE5 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		43EB2D6E248EABA00088B6EF /* BarberApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarberApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43EB2D71248EABA00088B6EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43EB2D73248EABA00088B6EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				43EB2D7A248EABA00088B6EF /* BarberApp.xcdatamodeld */,
 				43EB2D8F248EB0BF0088B6EF /* logo.pdf */,
 				43EB2D91248EB4670088B6EF /* Fonts */,
+				439BC85F2492E39D00452DE5 /* K.swift */,
 			);
 			path = BarberApp;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				439BC8602492E39D00452DE5 /* K.swift in Sources */,
 				43EB2D76248EABA00088B6EF /* SigninViewController.swift in Sources */,
 				43EB2D99248EF0B10088B6EF /* ContactViewController.swift in Sources */,
 				43470F912490373800211579 /* BookViewController.swift in Sources */,

@@ -9,24 +9,12 @@
 import UIKit
 import CollectionPickerView
 
-extension UIView {
-    
-    func anchor(top: NSLayoutYAxisAnchor, leading: NSLayoutXAxisAnchor, bottom: NSLayoutYAxisAnchor, trailing: NSLayoutXAxisAnchor, padding: UIEdgeInsets = .zero) {
-        translatesAutoresizingMaskIntoConstraints = false
-        
-        topAnchor.constraint(equalTo: top, constant: padding.top).isActive = true
-        leading.constraint(equalTo: leading, constant: padding.left).isActive = true
-        bottom.constraint(equalTo: bottom, constant: -padding.bottom).isActive = true
-        trailing.constraint(equalTo: trailing, constant: -padding.right).isActive = true
-        
-    }
-    
-}
 
 class BookViewController: UIViewController {
 
-    let titles = ["17 APR", "18 APR", "19 APR", "20 APR", "21 APR", "22 APR", "23 APR"]
+    let days = ["17", "18", "19", "20", "21", "22", "23"]
     var pickerView = CollectionPickerView()
+    let topView = UIView()
 //    let font = UIFont(name: "HelveticaNeue-Light", size: 20)!
 //    let highlightedFont = UIFont(name: "HelveticaNeue", size: 20)!
 
@@ -39,21 +27,32 @@ class BookViewController: UIViewController {
         pickerView.collectionView.register(
         CollectionPickerViewCell.self,
         forCellWithReuseIdentifier: NSStringFromClass(CollectionPickerViewCell.self))
-            
-        
         
         initViews()
+       
+    }
+        
+    override func viewWillDisappear(_ animated: Bool) {
+        
     }
     
     func initViews() {
         
-        let topView = UIView()
-        topView.backgroundColor = .yellow
+        pickerView.translatesAutoresizingMaskIntoConstraints = false
+        
+        topView.backgroundColor = .green
         topView.translatesAutoresizingMaskIntoConstraints = false
-        topView.heightAnchor.constraint(equalToConstant: view.frame.height/3).isActive = true
+        topView.heightAnchor.constraint(equalToConstant: view.frame.height/8).isActive = true
+        
+        pickerView.heightAnchor.constraint(equalToConstant: view.frame.height/6).isActive = true
+        //topView.addSubview(pickerView)
+        
+        //pickerView.centerYAnchor.constraint(equalTo: topView.centerYAnchor).isActive = true
+        
         
         let bottomView = UIView()
         bottomView.backgroundColor = .red
+        
         //Init stackview
         let stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
@@ -67,6 +66,7 @@ class BookViewController: UIViewController {
         stackView.spacing = 5
 
         stackView.addArrangedSubview(topView)
+        stackView.addArrangedSubview(pickerView)
         stackView.addArrangedSubview(bottomView)
         
         view.insetsLayoutMarginsFromSafeArea = true
@@ -92,14 +92,15 @@ extension BookViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return titles.count
+        return days.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(CollectionPickerViewCell.self), for: indexPath) as! CollectionPickerViewCell
         
-        let title = titles[indexPath.item]
-        cell.label.text = title
+        let title = days[indexPath.item]
+        cell.dayLabel.text = title
+        cell.monthLabel.text = "א פ ר"
 
         return cell
     }
@@ -109,26 +110,52 @@ extension BookViewController: UICollectionViewDataSource {
 
 
 private class CollectionPickerViewCell: UICollectionViewCell {
-    var label: UILabel!
+    var monthLabel: UILabel!
+    var dayLabel: UILabel!
     
     
     func initialize() {
-//        self.layer.isDoubleSided = false
-//        self.layer.shouldRasterize = true
-//        self.layer.rasterizationScale = UIScreen.main.scale
+        
+        self.layer.isDoubleSided = false
+        
+        self.dayLabel = UILabel()
+        self.dayLabel.backgroundColor = .yellow
+        self.dayLabel.textAlignment = .center
+        self.dayLabel.font = K.dayFont
+        self.dayLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        let dayView = UIView()
+        dayView.backgroundColor = .gray
+        dayView.addSubview(dayLabel)
+        
+        self.dayLabel.leadingAnchor.constraint(equalTo: dayView.leadingAnchor).isActive = true
+        self.dayLabel.trailingAnchor.constraint(equalTo: dayView.trailingAnchor).isActive = true
+        self.dayLabel.bottomAnchor.constraint(equalTo: dayView.bottomAnchor).isActive = true
         
         
-        self.label = UILabel(frame: self.contentView.bounds)
-        self.label.backgroundColor = .yellow
-//        self.label.autoresizingMask = [.flexibleTopMargin, .flexibleLeftMargin, .flexibleBottomMargin, .flexibleRightMargin]
-        self.contentView.addSubview(self.label)
+        
+        //self.dayLabel.font = K.mainFont
+        
+        self.monthLabel = UILabel()
+        self.monthLabel.backgroundColor = .red
+        self.monthLabel.textAlignment = .center
+        self.monthLabel.font = K.mainFont
+        
+        
+        
+        let stackView = UIStackView(frame: contentView.bounds)
+        stackView.axis = .vertical
+        stackView.distribution = .fillEqually
+        contentView.addSubview(stackView)
+        
+        stackView.addArrangedSubview(dayView)
+        stackView.addArrangedSubview(monthLabel)
+        
+        
+        //self.label.autoresizingMask = [.flexibleTopMargin, .flexibleLeftMargin, .flexibleBottomMargin, .flexibleRightMargin]
+        self.contentView.addSubview(stackView)
     }
-    
-    init() {
-        super.init(frame: CGRect.zero)
-        initialize()
-    }
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         initialize()

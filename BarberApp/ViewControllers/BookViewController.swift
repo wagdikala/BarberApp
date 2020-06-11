@@ -9,6 +9,20 @@
 import UIKit
 import CollectionPickerView
 
+extension UIView {
+    
+    func anchor(top: NSLayoutYAxisAnchor, leading: NSLayoutXAxisAnchor, bottom: NSLayoutYAxisAnchor, trailing: NSLayoutXAxisAnchor, padding: UIEdgeInsets = .zero) {
+        translatesAutoresizingMaskIntoConstraints = false
+        
+        topAnchor.constraint(equalTo: top, constant: padding.top).isActive = true
+        leading.constraint(equalTo: leading, constant: padding.left).isActive = true
+        bottom.constraint(equalTo: bottom, constant: -padding.bottom).isActive = true
+        trailing.constraint(equalTo: trailing, constant: -padding.right).isActive = true
+        
+    }
+    
+}
+
 class BookViewController: UIViewController {
 
     let titles = ["17 APR", "18 APR", "19 APR", "20 APR", "21 APR", "22 APR", "23 APR"]
@@ -35,57 +49,32 @@ class BookViewController: UIViewController {
         
         let topView = UIView()
         topView.backgroundColor = .yellow
-        
-//        topView.heightAnchor.constraint(equalToConstant: 120.0).isActive = true
-//        topView.widthAnchor.constraint(equalToConstant: 120.0).isActive = true
+        topView.translatesAutoresizingMaskIntoConstraints = false
+        topView.heightAnchor.constraint(equalToConstant: view.frame.height/3).isActive = true
         
         let bottomView = UIView()
         bottomView.backgroundColor = .red
-        
-        
         //Init stackview
-        let stackView = UIStackView(frame: view.bounds)
-        stackView.axis = NSLayoutConstraint.Axis.vertical
-        stackView.distribution = UIStackView.Distribution.fillEqually
-        stackView.alignment = UIStackView.Alignment.center
-        stackView.spacing = 10
-        stackView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        let stackView = UIStackView()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
         
-        stackView.addArrangedSubview(topView)
-        stackView.addArrangedSubview(bottomView)
-        
-        
-//        topView.leadingAnchor.constraint(equalTo: stackView.leadingAnchor).isActive = true
-//        topView.topAnchor.constraint(equalTo: stackView.topAnchor).isActive = true
-//        topView.heightAnchor.constraint(equalTo: stackView.heightAnchor).isActive = true
-//        topView.widthAnchor.constraint(equalTo: stackView.widthAnchor).isActive = true
-//        topView.translatesAutoresizingMaskIntoConstraints = false
-//
-//        bottomView.leadingAnchor.constraint(equalTo: stackView.leadingAnchor).isActive = true
-//        bottomView.topAnchor.constraint(equalTo: stackView.topAnchor).isActive = true
-//        bottomView.heightAnchor.constraint(equalTo: stackView.heightAnchor).isActive = true
-//        bottomView.widthAnchor.constraint(equalTo: stackView.widthAnchor).isActive = true
-//        bottomView.translatesAutoresizingMaskIntoConstraints = false
-        
-       
-//        pickerView.leadingAnchor.constraint(equalTo: stackView.leadingAnchor).isActive = true
-//        pickerView.topAnchor.constraint(equalTo: stackView.topAnchor).isActive = true
-//        pickerView.heightAnchor.constraint(equalTo: stackView.heightAnchor).isActive = true
-//        pickerView.widthAnchor.constraint(equalTo: stackView.widthAnchor).isActive = true
-
-     
         view.addSubview(stackView)
         view.backgroundColor = .blue
         
-//        stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-//        stackView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-//        stackView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
-//        stackView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-             
+        stackView.axis = NSLayoutConstraint.Axis.vertical
+        stackView.distribution = UIStackView.Distribution.fill
+        stackView.alignment = UIStackView.Alignment.fill
+        stackView.spacing = 5
+
+        stackView.addArrangedSubview(topView)
+        stackView.addArrangedSubview(bottomView)
         
-        
-//        stackView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-//        stackView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
+        view.insetsLayoutMarginsFromSafeArea = true
+     
+        stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         
         
     }

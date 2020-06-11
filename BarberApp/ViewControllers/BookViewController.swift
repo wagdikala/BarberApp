@@ -32,40 +32,41 @@ class BookViewController: UIViewController {
        
     }
         
-    override func viewWillDisappear(_ animated: Bool) {
-        
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     func initViews() {
         
         pickerView.translatesAutoresizingMaskIntoConstraints = false
         
-        topView.backgroundColor = .green
-        topView.translatesAutoresizingMaskIntoConstraints = false
-        topView.heightAnchor.constraint(equalToConstant: view.frame.height/8).isActive = true
+//        topView.backgroundColor = .green
+//        topView.translatesAutoresizingMaskIntoConstraints = false
+//        topView.heightAnchor.constraint(equalToConstant: view.frame.height/8).isActive = true
         
-        pickerView.heightAnchor.constraint(equalToConstant: view.frame.height/6).isActive = true
+        pickerView.heightAnchor.constraint(equalToConstant: view.frame.height/4).isActive = true
         //topView.addSubview(pickerView)
         
         //pickerView.centerYAnchor.constraint(equalTo: topView.centerYAnchor).isActive = true
         
         
         let bottomView = UIView()
-        bottomView.backgroundColor = .red
+        bottomView.backgroundColor = .clear
         
         //Init stackview
         let stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(stackView)
-        view.backgroundColor = .blue
+        //view.backgroundColor = .white
         
         stackView.axis = NSLayoutConstraint.Axis.vertical
         stackView.distribution = UIStackView.Distribution.fill
         stackView.alignment = UIStackView.Alignment.fill
         stackView.spacing = 5
 
-        stackView.addArrangedSubview(topView)
+        //stackView.addArrangedSubview(topView)
         stackView.addArrangedSubview(pickerView)
         stackView.addArrangedSubview(bottomView)
         
@@ -119,13 +120,14 @@ private class CollectionPickerViewCell: UICollectionViewCell {
         self.layer.isDoubleSided = false
         
         self.dayLabel = UILabel()
-        self.dayLabel.backgroundColor = .yellow
+        self.dayLabel.backgroundColor = .clear
         self.dayLabel.textAlignment = .center
         self.dayLabel.font = K.dayFont
+        self.dayLabel.textColor = .darkGray
         self.dayLabel.translatesAutoresizingMaskIntoConstraints = false
         
         let dayView = UIView()
-        dayView.backgroundColor = .gray
+        dayView.backgroundColor = .clear
         dayView.addSubview(dayLabel)
         
         self.dayLabel.leadingAnchor.constraint(equalTo: dayView.leadingAnchor).isActive = true
@@ -137,9 +139,10 @@ private class CollectionPickerViewCell: UICollectionViewCell {
         //self.dayLabel.font = K.mainFont
         
         self.monthLabel = UILabel()
-        self.monthLabel.backgroundColor = .red
+        self.monthLabel.backgroundColor = .clear
         self.monthLabel.textAlignment = .center
         self.monthLabel.font = K.mainFont
+        self.monthLabel.textColor = .lightGray
         
         
         

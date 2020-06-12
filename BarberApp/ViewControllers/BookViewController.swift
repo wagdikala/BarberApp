@@ -17,19 +17,11 @@ class BookViewController: UIViewController {
     let topView = UIView()
 
     let dayTable = DayViewController()
-//    let font = UIFont(name: "HelveticaNeue-Light", size: 20)!
-//    let highlightedFont = UIFont(name: "HelveticaNeue", size: 20)!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        pickerView.delegate = self
-        pickerView.dataSource = self
-        
-        pickerView.collectionView.register(
-        CollectionPickerViewCell.self,
-        forCellWithReuseIdentifier: NSStringFromClass(CollectionPickerViewCell.self))
-        
+        configurePickerView()
         initViews()
        
     }
@@ -39,20 +31,25 @@ class BookViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
-    func initViews() {
+    func configurePickerView() {
+        pickerView.delegate = self
+        pickerView.dataSource = self
         
-        
+        pickerView.collectionView.register(
+        CollectionPickerViewCell.self,
+        forCellWithReuseIdentifier: NSStringFromClass(CollectionPickerViewCell.self))
         pickerView.translatesAutoresizingMaskIntoConstraints = false
-        
-//        topView.backgroundColor = .green
-//        topView.translatesAutoresizingMaskIntoConstraints = false
-//        topView.heightAnchor.constraint(equalToConstant: view.frame.height/8).isActive = true
-        
+                
+        //        topView.backgroundColor = .green
+        //        topView.translatesAutoresizingMaskIntoConstraints = false
+        //        topView.heightAnchor.constraint(equalToConstant: view.frame.height/8).isActive = true
+                
         pickerView.heightAnchor.constraint(equalToConstant: view.frame.height/4).isActive = true
-        //topView.addSubview(pickerView)
+                //topView.addSubview(pickerView)
         
-        //pickerView.centerYAnchor.constraint(equalTo: topView.centerYAnchor).isActive = true
-        
+    }
+    
+    func initViews() {
         
         let bottomView = UIView()
         bottomView.backgroundColor = .clear

@@ -15,6 +15,8 @@ class BookViewController: UIViewController {
     let days = ["17", "18", "19", "20", "21", "22", "23"]
     var pickerView = CollectionPickerView()
     let topView = UIView()
+
+    let dayTable = DayViewController()
 //    let font = UIFont(name: "HelveticaNeue-Light", size: 20)!
 //    let highlightedFont = UIFont(name: "HelveticaNeue", size: 20)!
 
@@ -38,6 +40,7 @@ class BookViewController: UIViewController {
     }
     
     func initViews() {
+        
         
         pickerView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -68,7 +71,7 @@ class BookViewController: UIViewController {
 
         //stackView.addArrangedSubview(topView)
         stackView.addArrangedSubview(pickerView)
-        stackView.addArrangedSubview(bottomView)
+        stackView.addArrangedSubview(dayTable.tableView)
         
         view.insetsLayoutMarginsFromSafeArea = true
      

@@ -29,7 +29,9 @@ class DayViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! DayTableViewCell
-    
+        if indexPath.row % 2 == 0 {
+            cell.backgroundColor = .lightGray
+        }
 
         return cell
     }

@@ -13,5 +13,6 @@ struct K {
 
     static let mainFont = UIFont(name: "NewPeninimMT", size: 30)
     static let dayFont = UIFont(name: "NewPeninimMT", size: 70)
+    static let hourFont = UIFont(name: "NewPeninimMT", size: 20)
 
 }

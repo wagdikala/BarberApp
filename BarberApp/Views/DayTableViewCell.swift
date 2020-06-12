@@ -10,28 +10,39 @@ import UIKit
 
 class DayTableViewCell: UITableViewCell {
     
-    let hour = 10
-//    lazy var hourLabel: UILabel = {
-//        let label = UILabel()
-//        label.text = "\(self.hour):00"
-//        return label
-//    }()
+    var hour = 1
     
-    lazy var leftView: UIView = {
+    var hourLabel: UILabel = {
+        let label = UILabel()
+        label.text = "00:00"
+        label.textAlignment = .center
+        label.font = K.hourFont
+        return label
+    }()
+    
+    var halfHourLabel: UILabel = {
+        let label = UILabel()
+        label.text = "00:30"
+        label.textAlignment = .center
+        label.font = K.hourFont
+        return label
+    }()
+          
+    
+    var leftView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
-    lazy var rightView: UIView = {
+    var rightView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
-    lazy var mainView: UIView = {
+    var mainView: UIView = {
         let view = UIView()
-        view.frame = self.frame
         return view
     }()
 
@@ -40,6 +51,11 @@ class DayTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         addSubview(mainView)
         initViews()
+        
+    }
+    
+    override func prepareForReuse() {
+        //initViews()
     }
     
     required init?(coder: NSCoder) {
@@ -48,15 +64,9 @@ class DayTableViewCell: UITableViewCell {
     
     func initViews() {
         
-        let hourLabel = UILabel()
-        hourLabel.text = "\(hour):00"
-        hourLabel.textAlignment = .center
-        hourLabel.font = K.hourFont
+       
         
-        let halfHourLabel = UILabel()
-        halfHourLabel.text = "\(hour):30"
-        halfHourLabel.textAlignment = .center
-        halfHourLabel.font = K.hourFont
+      
         
         let hourLine = LineView()
         hourLine.backgroundColor = .clear
@@ -75,7 +85,6 @@ class DayTableViewCell: UITableViewCell {
         
         leftView.leadingAnchor.constraint(equalTo: mainView.leadingAnchor).isActive = true
         leftView.topAnchor.constraint(equalTo: mainView.topAnchor).isActive = true
-        leftView.widthAnchor.constraint(equalToConstant: mainView.frame.width / 6).isActive = true
         leftView.bottomAnchor.constraint(equalTo: mainView.bottomAnchor).isActive = true
         
         rightView.leadingAnchor.constraint(equalTo: leftView.trailingAnchor, constant: 2).isActive = true
@@ -111,12 +120,6 @@ class DayTableViewCell: UITableViewCell {
         rightStack.trailingAnchor.constraint(equalTo: rightView.trailingAnchor).isActive = true
         rightStack.bottomAnchor.constraint(equalTo: rightView.bottomAnchor).isActive = true
         
-        
-//
-//        halfHourLabel.topAnchor.constraint(equalTo: hourLabel.bottomAnchor).isActive = true
-//        halfHourLabel.leadingAnchor.constraint(equalTo: leftView.leadingAnchor).isActive = true
-//        halfHourLabel.bottomAnchor.constraint(equalTo: leftView.bottomAnchor).isActive = true
-//        halfHourLabel.trailingAnchor.constraint(equalTo: leftView.trailingAnchor).isActive = true
         
     }
 

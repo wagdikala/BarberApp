@@ -10,8 +10,6 @@ import UIKit
 
 class DayTableViewCell: UITableViewCell {
     
-    var hour = 1
-    
     var hourLabel: UILabel = {
         let label = UILabel()
         label.text = "00:00"
@@ -50,24 +48,17 @@ class DayTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         addSubview(mainView)
+        contentView.backgroundColor = K.dayBackground
         initViews()
         
     }
-    
-    override func prepareForReuse() {
-        //initViews()
-    }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     func initViews() {
-        
        
-        
-      
-        
         let hourLine = LineView()
         hourLine.backgroundColor = .clear
         
@@ -75,9 +66,9 @@ class DayTableViewCell: UITableViewCell {
         halfLine.backgroundColor = .clear
         
         mainView.translatesAutoresizingMaskIntoConstraints = false
-        mainView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 40).isActive = true
+        mainView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5).isActive = true
         mainView.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        mainView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -50).isActive = true
+        mainView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -5).isActive = true
         mainView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         
         mainView.addSubview(leftView)

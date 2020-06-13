@@ -19,6 +19,9 @@ class DayViewController: UITableViewController {
     func configureTable() {
         tableView.register(DayTableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.separatorStyle = .none
+        tableView.showsVerticalScrollIndicator = false
+        tableView.backgroundView = UIView()
+        tableView.backgroundView?.backgroundColor = K.dayBackground
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {

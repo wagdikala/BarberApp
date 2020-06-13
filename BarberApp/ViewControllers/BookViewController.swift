@@ -12,161 +12,80 @@ import CollectionPickerView
 
 class BookViewController: UIViewController {
     
-    let days = ["17", "18", "19", "20", "21", "22", "23"]
-    var pickerView = CollectionPickerView()
-    let topView = UIView()
-
+    
     let dayTable = DayViewController()
+    var pickerView = PickerViewController()
+    
+    let topView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    let bottomView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    let bottomViewEx: UIView = {
+        let view = UIView()
+        view.backgroundColor = K.dayBackground
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        configurePickerView()
         initViews()
        
-    }
-        
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: animated)
-    }
-    
-    func configurePickerView() {
-        pickerView.delegate = self
-        pickerView.dataSource = self
-        
-        pickerView.collectionView.register(
-        CollectionPickerViewCell.self,
-        forCellWithReuseIdentifier: NSStringFromClass(CollectionPickerViewCell.self))
-        pickerView.translatesAutoresizingMaskIntoConstraints = false
-                
-        //        topView.backgroundColor = .green
-        //        topView.translatesAutoresizingMaskIntoConstraints = false
-        //        topView.heightAnchor.constraint(equalToConstant: view.frame.height/8).isActive = true
-                
-        pickerView.heightAnchor.constraint(equalToConstant: view.frame.height/4).isActive = true
-                //topView.addSubview(pickerView)
-        
     }
     
     func initViews() {
         
-        let bottomView = UIView()
-        bottomView.backgroundColor = .clear
+        topView.addSubview(pickerView.view)
+        bottomView.addSubview(dayTable.view)
+        bottomViewEx.addSubview(bottomView)
+        view.addSubview(topView)
+        view.addSubview(bottomViewEx)
         
-        //Init stackview
-        let stackView = UIStackView()
-        stackView.translatesAutoresizingMaskIntoConstraints = false
+        pickerView.view.translatesAutoresizingMaskIntoConstraints = false
+        dayTable.view.translatesAutoresizingMaskIntoConstraints   = false
         
-        view.addSubview(stackView)
-        //view.backgroundColor = .white
+        topView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive   = true
+        topView.topAnchor.constraint(equalTo: view.topAnchor).isActive           = true
+        topView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40).isActive = true
+        topView.heightAnchor.constraint(equalToConstant: 200).isActive           = true
         
-        stackView.axis = NSLayoutConstraint.Axis.vertical
-        stackView.distribution = UIStackView.Distribution.fill
-        stackView.alignment = UIStackView.Alignment.fill
-        stackView.spacing = 5
-
-        //stackView.addArrangedSubview(topView)
-        stackView.addArrangedSubview(pickerView)
-        stackView.addArrangedSubview(dayTable.tableView)
+        pickerView.view.leadingAnchor.constraint(equalTo: topView.leadingAnchor).isActive   = true
+        pickerView.view.topAnchor.constraint(equalTo: topView.topAnchor).isActive           = true
+        pickerView.view.trailingAnchor.constraint(equalTo: topView.trailingAnchor).isActive = true
+        pickerView.view.bottomAnchor.constraint(equalTo: topView.bottomAnchor).isActive     = true
+        
+        bottomViewEx.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive   = true
+        bottomViewEx.topAnchor.constraint(equalTo: topView.bottomAnchor).isActive     = true
+        bottomViewEx.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        bottomViewEx.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive     = true
+        
+        bottomView.leadingAnchor.constraint(equalTo: bottomViewEx.leadingAnchor, constant: 50).isActive   = true
+        bottomView.topAnchor.constraint(equalTo: bottomViewEx.topAnchor, constant: 50).isActive     = true
+        bottomView.trailingAnchor.constraint(equalTo: bottomViewEx.trailingAnchor, constant: -50).isActive = true
+        bottomView.bottomAnchor.constraint(equalTo: bottomViewEx.bottomAnchor, constant: -50).isActive     = true
+        
+        dayTable.view.leadingAnchor.constraint(equalTo: bottomView.leadingAnchor).isActive   = true
+        dayTable.view.topAnchor.constraint(equalTo: bottomView.topAnchor).isActive           = true
+        dayTable.view.trailingAnchor.constraint(equalTo: bottomView.trailingAnchor).isActive = true
+        dayTable.view.bottomAnchor.constraint(equalTo: bottomView.bottomAnchor).isActive     = true
         
         view.insetsLayoutMarginsFromSafeArea = true
-     
-        stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
-        stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-        
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
 
 }
 
-extension BookViewController: UICollectionViewDelegate {
-    
-}
-
-extension BookViewController: UICollectionViewDataSource {
-    
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return days.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NSStringFromClass(CollectionPickerViewCell.self), for: indexPath) as! CollectionPickerViewCell
-        
-        let title = days[indexPath.item]
-        cell.dayLabel.text = title
-        cell.monthLabel.text = "א פ ר"
-
-        return cell
-    }
-}
-
-
-
-
-private class CollectionPickerViewCell: UICollectionViewCell {
-    var monthLabel: UILabel!
-    var dayLabel: UILabel!
-    
-    
-    func initialize() {
-        
-        self.layer.isDoubleSided = false
-        
-        self.dayLabel = UILabel()
-        self.dayLabel.backgroundColor = .clear
-        self.dayLabel.textAlignment = .center
-        self.dayLabel.font = K.dayFont
-        self.dayLabel.textColor = .darkGray
-        self.dayLabel.translatesAutoresizingMaskIntoConstraints = false
-        
-        let dayView = UIView()
-        dayView.backgroundColor = .clear
-        dayView.addSubview(dayLabel)
-        
-        self.dayLabel.leadingAnchor.constraint(equalTo: dayView.leadingAnchor).isActive = true
-        self.dayLabel.trailingAnchor.constraint(equalTo: dayView.trailingAnchor).isActive = true
-        self.dayLabel.bottomAnchor.constraint(equalTo: dayView.bottomAnchor).isActive = true
-        
-        
-        
-        //self.dayLabel.font = K.mainFont
-        
-        self.monthLabel = UILabel()
-        self.monthLabel.backgroundColor = .clear
-        self.monthLabel.textAlignment = .center
-        self.monthLabel.font = K.mainFont
-        self.monthLabel.textColor = .lightGray
-        
-        
-        
-        let stackView = UIStackView(frame: contentView.bounds)
-        stackView.axis = .vertical
-        stackView.distribution = .fillEqually
-        contentView.addSubview(stackView)
-        
-        stackView.addArrangedSubview(dayView)
-        stackView.addArrangedSubview(monthLabel)
-        
-        
-        //self.label.autoresizingMask = [.flexibleTopMargin, .flexibleLeftMargin, .flexibleBottomMargin, .flexibleRightMargin]
-        self.contentView.addSubview(stackView)
-    }
-
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        initialize()
-    }
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        initialize()
-    }
-    
-}

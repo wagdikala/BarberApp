@@ -12,6 +12,8 @@
 		439BC8622492FA2100452DE5 /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439BC8612492FA2100452DE5 /* DayViewController.swift */; };
 		439BC8662493080000452DE5 /* DayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439BC8652493080000452DE5 /* DayTableViewCell.swift */; };
 		439BC8A82494039E00452DE5 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439BC8A72494039E00452DE5 /* SampleData.swift */; };
+		439BC8AA2494264800452DE5 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439BC8A92494264800452DE5 /* PickerViewController.swift */; };
+		439BC8AC24943CD700452DE5 /* BottomAlignedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439BC8AB24943CD700452DE5 /* BottomAlignedLabel.swift */; };
 		43EB2D72248EABA00088B6EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EB2D71248EABA00088B6EF /* AppDelegate.swift */; };
 		43EB2D74248EABA00088B6EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EB2D73248EABA00088B6EF /* SceneDelegate.swift */; };
 		43EB2D76248EABA00088B6EF /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EB2D75248EABA00088B6EF /* SigninViewController.swift */; };
@@ -34,6 +36,8 @@
 		439BC8612492FA2100452DE5 /* DayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
 		439BC8652493080000452DE5 /* DayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTableViewCell.swift; sourceTree = "<group>"; };
 		439BC8A72494039E00452DE5 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		439BC8A92494264800452DE5 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		439BC8AB24943CD700452DE5 /* BottomAlignedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomAlignedLabel.swift; sourceTree = "<group>"; };
 		43EB2D6E248EABA00088B6EF /* BarberApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarberApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43EB2D71248EABA00088B6EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43EB2D73248EABA00088B6EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 				43EB2D98248EF0B10088B6EF /* ContactViewController.swift */,
 				43470F902490373800211579 /* BookViewController.swift */,
 				439BC8612492FA2100452DE5 /* DayViewController.swift */,
+				439BC8A92494264800452DE5 /* PickerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 			children = (
 				43EB2D77248EABA00088B6EF /* Main.storyboard */,
 				439BC8652493080000452DE5 /* DayTableViewCell.swift */,
+				439BC8AB24943CD700452DE5 /* BottomAlignedLabel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -275,7 +281,9 @@
 			files = (
 				439BC8602492E39D00452DE5 /* K.swift in Sources */,
 				439BC8622492FA2100452DE5 /* DayViewController.swift in Sources */,
+				439BC8AC24943CD700452DE5 /* BottomAlignedLabel.swift in Sources */,
 				43EB2D76248EABA00088B6EF /* SigninViewController.swift in Sources */,
+				439BC8AA2494264800452DE5 /* PickerViewController.swift in Sources */,
 				43EB2D99248EF0B10088B6EF /* ContactViewController.swift in Sources */,
 				43470F912490373800211579 /* BookViewController.swift in Sources */,
 				43EB2D7C248EABA00088B6EF /* BarberApp.xcdatamodeld in Sources */,
